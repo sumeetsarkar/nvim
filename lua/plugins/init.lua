@@ -5,3 +5,6 @@ require("plugins.colorscheme")
 require("plugins.indentline")
 require("plugins.neotree")
 require("plugins.mason")
+require("plugins.jdtls")
+require("plugins.lspconfig")
+

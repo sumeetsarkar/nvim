@@ -48,20 +48,13 @@ return require('packer').startup(function(use)
   -- Load on an autocommand event
   use {'andymass/vim-matchup', event = 'VimEnter'}
 
-  -- supercool plugin
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 
   -- colorschemes
   use {'ellisonleao/gruvbox.nvim', as = 'gruvbox'}
-  use {'dracula/vim', as = 'dracula'}
-  use {'rose-pine/neovim', as = 'rose-pine'}
-  use {'kyoh86/momiji', as = 'momiji'}
-  use {'folke/tokyonight.nvim', as = 'tokyonight'}
   use {'catppuccin/nvim', as = 'catppuccin'}
   use {'rebelot/kanagawa.nvim', as = 'kanagawa'}
   use {'tomasiser/vim-code-dark', as = 'codedark'}
-  use {'projekt0n/github-nvim-theme'}
-  use {'koirand/tokyo-metro.vim'}
   --use {'', as = ''}
 
   -- Use dependency and run lua function after load
@@ -105,9 +98,11 @@ return require('packer').startup(function(use)
   -- indent line
   use 'lukas-reineke/indent-blankline.nvim'
 
+ -- outline
   use 'preservim/tagbar'
 
   -- lsp
+  use 'neovim/nvim-lspconfig'
   use 'williamboman/mason.nvim'
   use 'mfussenegger/nvim-jdtls'
 
