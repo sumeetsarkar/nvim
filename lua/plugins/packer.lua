@@ -106,6 +106,22 @@ return require('packer').startup(function(use)
   use 'williamboman/mason.nvim'
   use 'mfussenegger/nvim-jdtls'
 
+  use {
+    'VonHeikemen/lsp-zero.nvim',
+    branch = 'v2.x',
+    requires = {
+      -- LSP Support
+      {'neovim/nvim-lspconfig'},             -- Required
+      {'williamboman/mason.nvim'},           -- Optional
+      {'williamboman/mason-lspconfig.nvim'}, -- Optional
+
+      -- Autocompletion
+      {'hrsh7th/nvim-cmp'},     -- Required
+      {'hrsh7th/cmp-nvim-lsp'}, -- Required
+      {'L3MON4D3/LuaSnip'},     -- Required
+    }
+  }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

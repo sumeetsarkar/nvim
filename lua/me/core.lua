@@ -72,15 +72,15 @@ set.linebreak = true  --" Wrap lines at convenient points
 set.wildmenu = true                      --" enable ctrl-n and ctrl-p to scroll thru matches
 set.wildmode ="list:longest"
 set.wildignore = "*.o,*.obj,*~"       --" stuff to ignore when tab completing
-set.wildignore:append("*vim/backups*")
-set.wildignore:append("*sass-cache*")
-set.wildignore:append("*DS_Store*")
-set.wildignore:append("vendor/rails/**")
-set.wildignore:append("vendor/cache/**")
-set.wildignore:append("*.gem")
-set.wildignore:append("log/**")
-set.wildignore:append("tmp/**")
-set.wildignore:append("*.png,*.jpg,*.gif")
+--set.wildignore:append("*vim/backups*")
+--set.wildignore:append("*sass-cache*")
+--set.wildignore:append("*DS_Store*")
+--set.wildignore:append("vendor/rails/**")
+--set.wildignore:append("vendor/cache/**")
+--set.wildignore:append("*.gem")
+--set.wildignore:append("log/**")
+--set.wildignore:append("tmp/**")
+--set.wildignore:append("*.png,*.jpg,*.gif")
 
 --" ================ Scrolling ========================
 
