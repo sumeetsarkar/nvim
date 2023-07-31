@@ -46,8 +46,8 @@ set.scrolloff      =4
 set.sidescroll     =5
 set.ignorecase = true
 set.smartcase = true
-set.tagcase        = "match"
- 
+set.tagcase = "match"
+
 --" ================ Turn Off Swap Files ==============
 --set.noswapfile = true
 --set.nobackup = true

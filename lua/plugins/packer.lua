@@ -55,6 +55,7 @@ return require('packer').startup(function(use)
   use {'catppuccin/nvim', as = 'catppuccin'}
   use {'rebelot/kanagawa.nvim', as = 'kanagawa'}
   use {'tomasiser/vim-code-dark', as = 'codedark'}
+  use 'EdenEast/nightfox.nvim'
   --use {'', as = ''}
 
   -- Use dependency and run lua function after load
