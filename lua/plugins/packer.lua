@@ -52,8 +52,14 @@ return require('packer').startup(function(use)
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 
   -- colorschemes
-  use {"ellisonleao/gruvbox.nvim"}
+  use {'ellisonleao/gruvbox.nvim', as = 'gruvbox'}
   use {'dracula/vim', as = 'dracula'}
+  use {'rose-pine/neovim', as = 'rose-pine'}
+  use {'kyoh86/momiji', as = 'momiji'}
+  use {'folke/tokyonight.nvim', as = 'tokyonight'}
+  use {'catppuccin/nvim', as = 'catppuccin'}
+  use {'rebelot/kanagawa.nvim', as = 'kanagawa'}
+  --use {'', as = ''}
 
   -- Use dependency and run lua function after load
   use {
@@ -84,7 +90,7 @@ return require('packer').startup(function(use)
     end
   }
 
-  -- status bar line
+  ---- status bar line
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
@@ -94,10 +100,11 @@ return require('packer').startup(function(use)
   use 'romgrk/barbar.nvim'
 
   -- indent line
-  use "lukas-reineke/indent-blankline.nvim"
+  use 'lukas-reineke/indent-blankline.nvim'
+
+  use 'preservim/tagbar'
 
   -- lsp
-
   use 'mfussenegger/nvim-jdtls'
 
   -- Automatically set up your configuration after cloning packer.nvim

@@ -1,15 +1,8 @@
 require('telescope').setup({
   defaults = {
-    layout_config = {
-      vertical = { width = 1 }
-      -- other layout configuration here
-    },
+    layout_strategy = 'vertical',
+    layout_config = { height = .99, width = .99, prompt_position = 'bottom'},
     -- other defaults configuration here
-  },
-  pickers = {
-    find_files = {
-      theme = "dropdown",
-    }
   },
   -- other configuration values here
   extensions = {
