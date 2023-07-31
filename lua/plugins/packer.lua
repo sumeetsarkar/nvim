@@ -108,6 +108,7 @@ return require('packer').startup(function(use)
   use 'preservim/tagbar'
 
   -- lsp
+  use 'williamboman/mason.nvim'
   use 'mfussenegger/nvim-jdtls'
 
   -- Automatically set up your configuration after cloning packer.nvim
