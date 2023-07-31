@@ -19,7 +19,7 @@ set.modeline = true          ----" enable vim modelines
 set.hlsearch = true         ----" highlight search items
 set.incsearch = true          ----" searches are performed as you type
 set.confirm = true            ----" ask confirmation like save before quit.
---set.shortmess   += "aAcIws--"  --" Hide or shorten certain messages
+--set.shortmess:append("aAcIws--")  --" Hide or shorten certain messages
 
 ----" This makes vim act like all other editors, buffers can
 ----" exist in the background without being in a window.
@@ -59,5 +59,33 @@ set.tabstop = 4
 set.expandtab = true          --" Tab key inserts spaces not tabs
 set.softtabstop = 4    --" spaces to enter for each tab
 set.shiftwidth  = 4    --" amount of spaces for indentation
-set.backspace="indent,eol,start"  --" Allow backspace in insert mode
+set.backspace = "indent,eol,start"  --" Allow backspace in insert mode
+
+set.wrap = true       --" Wrap lines
+set.linebreak = true  --" Wrap lines at convenient points
+
+--" ================ Completion =======================
+                                  --" Tab completion menu when using command mode
+set.wildmenu = true                      --" enable ctrl-n and ctrl-p to scroll thru matches
+set.wildmode ="list:longest"
+set.wildignore = "*.o,*.obj,*~"       --" stuff to ignore when tab completing
+set.wildignore:append("*vim/backups*")
+set.wildignore:append("*sass-cache*")
+set.wildignore:append("*DS_Store*")
+set.wildignore:append("vendor/rails/**")
+set.wildignore:append("vendor/cache/**")
+set.wildignore:append("*.gem")
+set.wildignore:append("log/**")
+set.wildignore:append("tmp/**")
+set.wildignore:append("*.png,*.jpg,*.gif")
+
+--" ================ Scrolling ========================
+
+set.scrolloff = 8         --"Start scrolling when we're 8 lines away from margins
+set.sidescrolloff = 15
+set.sidescroll = 1
+
+--" split management
+set.splitbelow = true
+set.splitright = true
 
