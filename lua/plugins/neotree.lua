@@ -1,4 +1,6 @@
 vim.cmd([[nnoremap \ :Neotree reveal<cr>]])
+vim.cmd([[nnoremap <leader>e :Neotree reveal<cr>]])
+vim.cmd([[nnoremap <leader>n :Neotree close<cr>]])
 
 require("neo-tree").setup({
     close_if_last_window = false, -- Close Neo-tree if it is the last window left in the tab

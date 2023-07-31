@@ -59,6 +59,9 @@ return require('packer').startup(function(use)
   use {'folke/tokyonight.nvim', as = 'tokyonight'}
   use {'catppuccin/nvim', as = 'catppuccin'}
   use {'rebelot/kanagawa.nvim', as = 'kanagawa'}
+  use {'tomasiser/vim-code-dark', as = 'codedark'}
+  use {'projekt0n/github-nvim-theme'}
+  use {'koirand/tokyo-metro.vim'}
   --use {'', as = ''}
 
   -- Use dependency and run lua function after load

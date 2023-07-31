@@ -1,5 +1,8 @@
 local set = vim.opt
 
+vim.cmd("syntax on")
+vim.cmd("syntax enable")
+
 --" ================ General Config ====================
 set.relativenumber = true
 set.cursorline = true
