@@ -52,7 +52,6 @@ return require('packer').startup(function(use)
 
   -- colorschemes
   use {'ellisonleao/gruvbox.nvim', as = 'gruvbox'}
-  use {'catppuccin/nvim', as = 'catppuccin'}
   use {'rebelot/kanagawa.nvim', as = 'kanagawa'}
   use {'tomasiser/vim-code-dark', as = 'codedark'}
   use 'EdenEast/nightfox.nvim'
