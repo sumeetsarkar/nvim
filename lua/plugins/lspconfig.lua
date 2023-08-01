@@ -14,10 +14,10 @@ vim.keymap.set('n', ',q', vim.diagnostic.setloclist)
 vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('UserLspConfig', {}),
   callback = function(ev)
-    local opts = function (arg, descValue)
+    local opts = function (_ev, _desc)
         return {
-            buffer = arg.buf,
-            desc = descValue
+            buffer = _ev.buf,
+            desc = _desc
         }
     end
     -- Enable completion triggered by <c-x><c-o>

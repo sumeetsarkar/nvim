@@ -110,6 +110,7 @@ return require('packer').startup(function(use)
   use 'williamboman/mason.nvim'
   use 'mfussenegger/nvim-jdtls'
 
+  -- completions
   use {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v2.x',
@@ -125,6 +126,8 @@ return require('packer').startup(function(use)
       {'L3MON4D3/LuaSnip'},     -- Required
     }
   }
+
+  use 'ray-x/lsp_signature.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
