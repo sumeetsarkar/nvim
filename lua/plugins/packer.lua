@@ -96,6 +96,9 @@ return require('packer').startup(function(use)
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
+  -- distraction free
+  use 'folke/zen-mode.nvim'
+
   -- tab bar
   use 'romgrk/barbar.nvim'
 

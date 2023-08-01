@@ -24,7 +24,6 @@ set.modeline = true          ----" enable vim modelines
 set.hlsearch = true         ----" highlight search items
 set.incsearch = true          ----" searches are performed as you type
 set.confirm = true            ----" ask confirmation like save before quit.
---set.shortmess:append("aAcIws--")  --" Hide or shorten certain messages
 
 ----" This makes vim act like all other editors, buffers can
 ----" exist in the background without being in a window.

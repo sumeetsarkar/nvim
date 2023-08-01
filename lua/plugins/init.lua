@@ -10,4 +10,5 @@ require("plugins.jdtls")
 require("plugins.lspconfig")
 require("plugins.lspzero")
 require("plugins.lsp_signature")
+require("plugins.zenmode")
 
