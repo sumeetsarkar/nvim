@@ -24,3 +24,15 @@ vim.keymap.set('n', '<leader>ng', nt_gitstatus .. nt_postion_float, { desc = "Ne
 local nt_buffers = ":Neotree source=buffers reveal=true"
 vim.keymap.set('n', '<leader>nb', nt_buffers .. nt_postion_float, { desc = "Neotree Buffers" })
 
+vim.keymap.set('n', "<F8>", ":TagbarToggle<CR>", { desc = "TagbarToggle" })
+vim.cmd("let g:tagbar_position = 'rightbelow'")
+vim.cmd("let g:tagbar_height = 50")
+vim.cmd("let g:tagbar_expand = 1")
+vim.cmd("let g:tagbar_autofocus = 1")
+vim.cmd("let g:tagbar_autoclose = 1")
+vim.cmd("let g:tagbar_compact = 2")
+vim.cmd("let g:tagbar_wrap = 2")
+vim.cmd("let g:tagbar_show_visibility = 0")
+vim.cmd("let g:tagbar_show_data_type = 1")
+vim.cmd("let g:tagbar_show_linenumbers = 0")
+
