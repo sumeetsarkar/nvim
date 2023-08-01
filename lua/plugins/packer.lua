@@ -33,6 +33,10 @@ return require('packer').startup(function(use)
   use 'rstacruz/vim-closer'
 
   -- My plugins here
+
+  -- super cool search motion
+  use 'justinmk/vim-sneak'
+
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.2',
     requires = { {'nvim-lua/plenary.nvim'} }

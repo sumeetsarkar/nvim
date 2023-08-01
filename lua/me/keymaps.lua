@@ -13,6 +13,11 @@ vim.keymap.set("n", "<Down>", "<NOP>", { desc = "Use j" })
 vim.keymap.set("n", "<Left>", "<NOP>", { desc = "Use h" })
 vim.keymap.set("n", "<Right>", "<NOP>", { desc = "Use l" })
 
+vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Nav left window" })
+vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Nav below window" })
+vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Nav above window" })
+vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Nav right window" })
+
 vim.keymap.set("n", "<leader>tn", ":tabnew<CR>", { desc = "Tab New" })
 vim.keymap.set("n", "<leader>tc", ":tabclose<CR>", { desc = "Tab Close" })
 

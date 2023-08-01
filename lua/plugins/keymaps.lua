@@ -7,8 +7,8 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = "Find Help" })
 
 -- barbar
 -- previous/next
-vim.keymap.set('n', '<C-k>', '<Cmd>BufferPrevious<CR>', { desc = "Buffer Tab" })
-vim.keymap.set('n', '<C-l>', '<Cmd>BufferNext<CR>', { desc = "buffer Next" })
+vim.keymap.set('n', '<C-,>', '<Cmd>BufferPrevious<CR>', { desc = "Buffer Tab" })
+vim.keymap.set('n', '<C-.>', '<Cmd>BufferNext<CR>', { desc = "buffer Next" })
 
 -- nt
 local nt_reveal = ":Neotree reveal"

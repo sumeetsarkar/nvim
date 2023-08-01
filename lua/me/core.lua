@@ -1,5 +1,6 @@
 local set = vim.opt
 
+vim.cmd("set termguicolors")
 vim.cmd("syntax on")
 vim.cmd("syntax enable")
 
