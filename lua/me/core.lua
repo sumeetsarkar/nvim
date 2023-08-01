@@ -5,6 +5,7 @@ vim.cmd("syntax on")
 vim.cmd("syntax enable")
 
 --" ================ General Config ====================
+set.signcolumn = "yes"
 set.relativenumber = true
 set.cursorline = true
 set.updatetime = 200
@@ -42,9 +43,9 @@ set.synmaxcol = 200       --" Only highlight the first 200 columns.
 --set foldopen      -=hor
 --set foldopen      +=jump
 --set foldtext       =mhi#foldy()
-set.mouse          ="a"
-set.scrolloff      =4
-set.sidescroll     =5
+set.mouse ="a"
+set.scrolloff = 4
+set.sidescroll = 5
 set.ignorecase = true
 set.smartcase = true
 set.tagcase = "match"
@@ -64,7 +65,6 @@ set.expandtab = true          --" Tab key inserts spaces not tabs
 set.softtabstop = 4    --" spaces to enter for each tab
 set.shiftwidth  = 4    --" amount of spaces for indentation
 set.backspace = "indent,eol,start"  --" Allow backspace in insert mode
-
 set.wrap = true       --" Wrap lines
 set.linebreak = true  --" Wrap lines at convenient points
 
@@ -72,16 +72,7 @@ set.linebreak = true  --" Wrap lines at convenient points
                                   --" Tab completion menu when using command mode
 set.wildmenu = true                      --" enable ctrl-n and ctrl-p to scroll thru matches
 set.wildmode ="list:longest"
-set.wildignore = "*.o,*.obj,*~"       --" stuff to ignore when tab completing
---set.wildignore:append("*vim/backups*")
---set.wildignore:append("*sass-cache*")
---set.wildignore:append("*DS_Store*")
---set.wildignore:append("vendor/rails/**")
---set.wildignore:append("vendor/cache/**")
---set.wildignore:append("*.gem")
---set.wildignore:append("log/**")
---set.wildignore:append("tmp/**")
---set.wildignore:append("*.png,*.jpg,*.gif")
+set.wildignore = "*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/node_modules,*/.log/*,*/.coverage,*/__pycache__,*.class,*/target,tmp/**,log/**,*.png,*.jpg,*.gif,*.o,*.obj,*~,*.class"
 
 --" ================ Scrolling ========================
 
