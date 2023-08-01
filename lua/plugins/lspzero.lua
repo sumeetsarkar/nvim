@@ -60,16 +60,20 @@ cmp.setup({
     }
   },
   formatting = {
-    fields = {'abbr', 'menu', 'kind'},
+    -- changing the order of fields so the icon is the first
+    fields = {'menu', 'abbr', 'kind'},
+
+    -- here is where the change happens
     format = function(entry, item)
-      local short_name = {
-        nvim_lsp = 'LSP',
-        nvim_lua = 'nvim'
+      local menu_icon = {
+        nvim_lsp = 'λ',
+        luasnip = '⋗',
+        buffer = 'Ω',
+        path = '🖫',
+        nvim_lua = 'Π',
       }
 
-      local menu_name = short_name[entry.source.name] or entry.source.name
-
-      item.menu = string.format('[%s]', menu_name)
+      item.menu = menu_icon[entry.source.name]
       return item
     end,
   },
