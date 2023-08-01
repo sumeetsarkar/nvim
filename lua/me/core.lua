@@ -6,6 +6,7 @@ vim.cmd("syntax enable")
 
 --" ================ General Config ====================
 set.signcolumn = "yes"
+set.number = true
 set.relativenumber = true
 set.cursorline = true
 set.updatetime = 200
