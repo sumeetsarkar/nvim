@@ -104,7 +104,6 @@ local config = {
         "javax",
       },
     },
-    extendedClientCapabilities = extendedClientCapabilities,
     sources = {
       organizeImports = {
         starThreshold = 9999,
@@ -118,7 +117,6 @@ local config = {
       useBlocks = true,
     },
   },
-
   flags = {
     allow_incremental_sync = true,
   },
@@ -126,6 +124,17 @@ local config = {
     bundles = {},
   },
 }
+
+config['on_attach'] = function(client, bufnr)
+  require "lsp_signature".on_attach({
+    bind = true, -- This is mandatory, otherwise border config won't get registered.
+    floating_window_above_cur_line = false,
+    padding = '',
+    handler_opts = {
+      border = "rounded"
+    }
+  }, bufnr)
+end
 
 -- This starts a new client & server,
 -- or attaches to an existing client & server depending on the `root_dir`.
