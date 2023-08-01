@@ -18,11 +18,11 @@ require('nightfox').setup({
       },
     },
     styles = {               -- Style to be applied to different syntax groups
-      comments = "NONE",     -- Value is any valid attr-list value `:help attr-list`
+      comments = "italic",     -- Value is any valid attr-list value `:help attr-list`
       conditionals = "NONE",
       constants = "NONE",
       functions = "NONE",
-      keywords = "NONE",
+      keywords = "italic",
       numbers = "NONE",
       operators = "NONE",
       strings = "NONE",
@@ -43,5 +43,5 @@ require('nightfox').setup({
   groups = {},
 })
 
-vim.cmd([[colorscheme nightfox]])
+vim.cmd([[colorscheme terafox]])
 
