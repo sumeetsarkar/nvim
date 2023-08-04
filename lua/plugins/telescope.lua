@@ -1,7 +1,12 @@
 require('telescope').setup({
   defaults = {
     layout_strategy = 'vertical',
-    layout_config = { height = .99, width = .99, prompt_position = 'bottom'},
+    layout_config = {
+        height = .99,
+        width = .99,
+        prompt_position = 'bottom',
+        preview_cutoff = 0,
+    },
     -- other defaults configuration here
   },
   -- other configuration values here
