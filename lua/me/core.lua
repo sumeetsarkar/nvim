@@ -84,3 +84,11 @@ set.sidescroll = 1
 set.splitbelow = true
 set.splitright = true
 
+--" when quitting a file, save the cursor position
+vim.cmd([[
+augroup save_cursor_position
+    autocmd!
+    autocmd BufReadPost * call setpos(".", getpos("'\""))
+augroup END
+]])
+

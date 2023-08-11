@@ -59,6 +59,8 @@ return require('packer').startup(function(use)
   use {'rebelot/kanagawa.nvim', as = 'kanagawa'}
   use {'tomasiser/vim-code-dark', as = 'codedark'}
   use 'EdenEast/nightfox.nvim'
+  use 'sainnhe/gruvbox-material'
+  use 'sainnhe/everforest'
   --use {'', as = ''}
 
   -- Use dependency and run lua function after load
@@ -66,6 +68,7 @@ return require('packer').startup(function(use)
     'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' },
     config = function() require('gitsigns').setup() end
   }
+  use 'tpope/vim-fugitive'
 
   use {'preservim/nerdcommenter'}
 

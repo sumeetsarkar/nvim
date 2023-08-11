@@ -12,7 +12,7 @@ end
 local jdtls_path = vim.fn.stdpath('data') .. "/mason/packages/jdtls"
 local path_to_lsp_server = jdtls_path .. "/config_mac"
 local path_to_plugins = jdtls_path .. "/plugins/"
-local path_to_jar = path_to_plugins .. "org.eclipse.equinox.launcher_1.6.500.v20230622-2056.jar"
+local path_to_jar = path_to_plugins .. "org.eclipse.equinox.launcher_1.6.500.v20230717-2134.jar"
 local lombok_path = jdtls_path .. "/lombok.jar"
 
 local root_markers = { ".git", "mvnw", "gradlew", "pom.xml", "build.gradle" }
