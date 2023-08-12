@@ -43,5 +43,5 @@ require('nightfox').setup({
   groups = {},
 })
 
-vim.cmd([[colorscheme dawnfox]])
+--vim.cmd([[colorscheme dawnfox]])
 

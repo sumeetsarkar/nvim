@@ -1,6 +1,8 @@
 require("plugins.packer")
 require("plugins.keymaps")
 require("plugins.telescope")
+require('plugins.gruvbox')
+require('plugins.nightfox')
 require("plugins.colorscheme")
 require("plugins.lualine")
 require("plugins.indentline")
