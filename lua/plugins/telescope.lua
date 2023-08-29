@@ -1,5 +1,6 @@
 require('telescope').setup({
   defaults = {
+    wrap_results = true,
     layout_strategy = 'vertical',
     layout_config = {
         height = .99,
