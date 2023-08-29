@@ -61,6 +61,8 @@ return require('packer').startup(function(use)
   use 'EdenEast/nightfox.nvim'
   use 'sainnhe/gruvbox-material'
   use 'sainnhe/everforest'
+  use 'rose-pine/neovim'
+  use 'catppuccin/nvim'
   --use {'', as = ''}
 
   -- Use dependency and run lua function after load
