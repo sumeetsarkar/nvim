@@ -67,8 +67,8 @@ require("neo-tree").setup({
         -- see `:h neo-tree-custom-commands-global`
         commands = {},
         window = {
-          position = "left",
-          width = 40,
+          position = "float",
+          width = 50,
           mapping_options = {
             noremap = true,
             nowait = true,
