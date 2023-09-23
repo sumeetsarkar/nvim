@@ -14,4 +14,5 @@ require("plugins.lspzero")
 require("plugins.lsp_signature")
 require("plugins.zenmode")
 require("plugins.gitsigns")
+require("plugins.nvim_dap")
 

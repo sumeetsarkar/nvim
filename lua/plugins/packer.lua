@@ -138,6 +138,17 @@ return require('packer').startup(function(use)
 
   use 'ray-x/lsp_signature.nvim'
 
+  -- debugger
+  use 'mfussenegger/nvim-dap'
+  use { 'rcarriga/nvim-dap-ui', requires = {'mfussenegger/nvim-dap'} }
+  use {
+    'jay-babu/mason-nvim-dap.nvim',
+    requires = {
+        'mason.nvim',
+        'mfussenegger/nvim-dap'
+    }
+  }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
