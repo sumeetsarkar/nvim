@@ -15,6 +15,6 @@ vim.o.background = "dark"
 --vim.cmd([[colorscheme nightfox]])
 --vim.cmd([[colorscheme nordfox]])
 --vim.cmd([[colorscheme terafox]])
---vim.cmd([[colorscheme rose-pine]])
-vim.cmd([[colorscheme catppuccin-macchiato]])
+vim.cmd([[colorscheme rose-pine-moon]])
+--vim.cmd([[colorscheme catppuccin-macchiato]])
 --vim.cmd([[colorscheme catppuccin-mocha]])
