@@ -8,21 +8,18 @@ require("ibl").setup {
     --indent = { char = "╎" },
     indent = {
         char = " ",
-        --char = "▏",
-        --char = "╎",
-    highlight = { "Function", "Label" },
+        highlight = { "Function", "Label" },
     },
     scope = {
-        enabled = true;
+        enabled = true,
         --char = "▏",
         --char = "╎",
         char = "▎",
         show_start = false,
         show_end = false,
-        --highlight = { "Function", "Label" },
+        highlight = { "Function" },
     },
     remove_blankline_trail = true,
     smart_indent_cap = true,
     priority = 2
 }
-
