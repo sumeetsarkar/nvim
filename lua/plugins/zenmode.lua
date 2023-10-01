@@ -7,7 +7,7 @@ zenmode.setup({
     -- * an absolute number of cells when > 1
     -- * a percentage of the width / height of the editor when <= 1
     -- * a function that returns the width or the height
-    width = 80, -- width of the Zen window
+    width = 100, -- width of the Zen window
     height = 1, -- height of the Zen window
     -- by default, no options are changed for the Zen window
     -- uncomment any of the options below, or add other vim.wo options you want to apply
@@ -40,5 +40,7 @@ zenmode.setup({
   end,
 })
 
-vim.keymap.set("n", "<leader>vv", zenmode.toggle, { desc = "Tab Close" })
+vim.keymap.set("n", "<leader>vv", zenmode.toggle, { desc = "Toggle Zenmode" })
+--vim.keymap.set("n", "<C-\\>", zenmode.toggle, { desc = "Toggle Zenmode" })
+vim.keymap.set("n", "<F12>", zenmode.toggle, { desc = "Toggle Zenmode" })
 
