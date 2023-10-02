@@ -24,3 +24,6 @@ vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Nav right window" })
 vim.keymap.set("n", "<leader>tn", ":tabnew<CR>", { desc = "Tab New" })
 vim.keymap.set("n", "<leader>tc", ":tabclose<CR>", { desc = "Tab Close" })
 
+vim.keymap.set("n", "<F9>",  ":!clang++ -std=c++17 -g % -o %< && ./%< <CR>", { desc = "c++ run" })
+vim.keymap.set("n", "<F10>", ":!clang++ -std=c++17 -g % -o %< <CR>", { desc = "c++ compile" })
+

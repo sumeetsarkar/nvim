@@ -40,7 +40,3 @@ zenmode.setup({
   end,
 })
 
-vim.keymap.set("n", "<leader>vv", zenmode.toggle, { desc = "Toggle Zenmode" })
---vim.keymap.set("n", "<C-\\>", zenmode.toggle, { desc = "Toggle Zenmode" })
-vim.keymap.set("n", "<F12>", zenmode.toggle, { desc = "Toggle Zenmode" })
-

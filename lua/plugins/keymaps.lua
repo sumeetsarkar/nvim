@@ -62,5 +62,5 @@ vim.cmd("let g:tagbar_show_visibility = 0")
 vim.cmd("let g:tagbar_show_data_type = 1")
 vim.cmd("let g:tagbar_show_linenumbers = 0")
 
-vim.keymap.set('n', "<F10>", ":ZenMode<CR>", { desc = "ZenMode" })
-
+vim.keymap.set('n', "<F12>", ":ZenMode<CR>", { desc = "Toggle Zenmode" })
+vim.keymap.set("n", "<leader>vv", ":ZenMode<CR>", { desc = "Toggle Zenmode" })
