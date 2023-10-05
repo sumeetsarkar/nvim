@@ -5,21 +5,18 @@ vim.opt.list = true
 require("ibl").setup {
     -- for example, context is off by default, use this to turn it on
     enabled = true,
-    --indent = { char = "╎" },
     indent = {
         char = " ",
+        --char = "▏",
         highlight = { "Function", "Label" },
     },
     scope = {
         enabled = true,
         --char = "▏",
-        --char = "╎",
         char = "▎",
         show_start = false,
         show_end = false,
-        highlight = { "Function" },
-    },
-    remove_blankline_trail = true,
-    smart_indent_cap = true,
-    priority = 2
+        highlight = { "Function", "Label" },
+        priority = 500
+    }
 }
