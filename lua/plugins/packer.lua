@@ -118,8 +118,11 @@ return require('packer').startup(function(use)
   -- indent line
   use 'lukas-reineke/indent-blankline.nvim'
 
- -- outline
+  -- outline
   use 'preservim/tagbar'
+
+  --- auto format
+  use 'rust-lang/rust.vim'
 
   -- lsp
   use 'neovim/nvim-lspconfig'
